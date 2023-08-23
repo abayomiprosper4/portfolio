@@ -10,5 +10,5 @@ currently working on expanding my expertise.
 <li>React</li>
   <p></p>
 You can find me on:
-<li>Instagram: pablo_3846</li>
+<li>Instagram: 3846.pablo</li>
 <li>tiktok:pablo_38460</li></ul>
