@@ -8,6 +8,7 @@ currently working on expanding my expertise.
 <li>JAVASCRIPT</li>
 <li>nodeJS</li>
 <li>React</li>
+<li>Firebase</li>
   <p></p>
 You can find me on:
 <li>Instagram: 3846.pablo</li>
