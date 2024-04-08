@@ -2,11 +2,10 @@
 Hello!
 I am Prosper Abayomi 👋, a front end developer, 
 currently working on expanding my expertise.
-<p>I'm currently improving my skills and knowledge in;</p>
+<p>I'm currently improving my skills and expanding my knowledge in;</p>
 <ul><li>HTML</li>
 <li>CSS</li>
 <li>JAVASCRIPT</li>
-<li>nodeJS</li>
 <li>React</li>
 <li>Firebase</li>
   <p></p>
