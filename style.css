@@ -9,6 +9,7 @@
   width: 100%;
   overflow: hidden;
   text-align: center;
+  z-index: 1;
 }
 ul {
   list-style-type: none;
@@ -41,7 +42,7 @@ li a:hover {
     margin: 0;
     position: relative;
     color: rgb(235, 230, 230);
-    background-image: url(windows-11-purple-abstract-dark-background-dark-purple-dark-3840x2400-8995.png);
+    background-image: url(5652030.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,16 +51,6 @@ li a:hover {
     height: auto;
 }
 
-@media only screen and (max-width: 500px){
-  html{
-  width: 100%;
-  }
-  #pg-01{
-    display: inline-block;
-    font-size: 10px;
-  }
-  
-}
 
 .column{
     top: 0;
@@ -99,15 +90,16 @@ li a:hover {
 .resume a{
     text-decoration: none;
     padding: 10px 30px;
-    background-color: rgb(255, 51, 0);
+    border: 1px solid #fff;
     display: inline-flex;
     color: white;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: .3s;
 }
 .resume a:hover{
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(255, 51, 0);
+    border: 1px solid rgb(255, 51, 0);
     color: white;
 }
 
@@ -116,12 +108,7 @@ li a:hover {
     background-color: rgb(20, 20, 20);
 }
 
-@media only screen and (max-width: 650px){
-  #pg-02{
-    display: inline-grid;
-  }
-  
-}
+
 .main{
     padding: 20px;
     text-align: center;
@@ -156,7 +143,7 @@ progress[value] {
     position: absolute;
     inset: 0;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     border-radius: 50%;
     overflow: hidden;
     background: black;/*var(--background); */
@@ -195,14 +182,13 @@ progress[value] {
   }
 
   .content{
+    display: inline-flex;
     color: white;
     font-size: 20px;
   }
-  .tt{
-    padding: 5px;
-    font-weight: bold;
-  }
-  
+   .ms{
+    padding: 10px;
+   }
   .tt-01{
     color: #31c6f7;
   }
@@ -220,41 +206,39 @@ progress[value] {
   }
   .exp2{
     font-size: 30px;
-    color: rgb(56, 56, 56);
+    color: #fff;
     letter-spacing: 2px;
     padding: 30px;
   }
 
   #pg-03{
-    height: 100vh;
-    position: relative;
+    height: auto;
+    background: rgb(105, 102, 102);
     padding: 30px;
   }
 
   .projects{
-    display: inline-block;
-  }
-  .projects img{
-    width: 20%;
-    margin: 4%;
+    display: block;
+    color: #fff;
+    column-count: 3;
   }
 
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  .projects img{
+    filter: brightness(55%);
+    max-width: 65%;
+    margin: 3%;
+  }
+  .text{
     text-align: center;
+    transform: translate(0%, -600%);
+    font-size: 18px;
   }
 
   #pg-04{
-    height: 90vh;
+    column-count: 2;
+    height: auto;
     position: relative;
-    width: 100%;
-    background-image: url(Screenshot4.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.514) 70%, transparent), url(wp2532971-night-mountain-wallpapers.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -265,11 +249,12 @@ progress[value] {
   display: inline-flex;
   padding: 20px;
   text-align: center;
+  align-items: center;
 }
 
 .vl{
   border-left: 3px solid rgb(51, 48, 48);
-  height: 400px;
+  height: 450px;
   position: relative;
   top: 0;
 }
@@ -282,12 +267,11 @@ progress[value] {
   text-align: center;
 }
 
-/* .icons{
-} */
+.icons{
+  display: flex;
+  text-align: right;
+}
 a{
-  margin: 2%;
-  display: block;
-  float: left;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -311,4 +295,30 @@ footer iconify-icon{
   float: right;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media only screen and (max-width: 500px){
+  #pg-01{
+  max-width: fit-content;
+  }
+  
+}
+
+@media only screen and (max-width: 650px){
+  #pg-02{
+    display: inline-grid;
+  }
+  
+}
+@media only screen and (max-width: 1024px){
+  .projects{
+    column-count: 2;
+  }
+  
+}
+@media only screen and (max-width: 768px){
+  .projects{
+    column-count: 1;
+  }
+
 }
